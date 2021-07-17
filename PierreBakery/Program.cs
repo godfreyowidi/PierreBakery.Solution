@@ -13,8 +13,8 @@ public class Program
     Console.WriteLine("      /      |");
     Console.WriteLine("     /       |");
     Console.WriteLine("    /        |");
-    Console.WriteLine("   /         |");
-    Console.WriteLine("  /          |");
+    Console.WriteLine("   / Welcome |");
+    Console.WriteLine("  /    To    |");
     Console.WriteLine(" /           |");
     Console.WriteLine("/PierreBakery|");
     Console.WriteLine("-------------");
@@ -29,6 +29,7 @@ public class Program
     BreadQuantity Order1 = new BreadQuantity(bread);
     PastryQuantity Order2 = new PastryQuantity(pastry);
 
-
+    Console.WriteLine($"Your order is {bread} bread, {pastry} pastries");
+    Console.WriteLine($"Checkout: ${Order1.CalcBreadCost(bread) + Order2.CalcPastryCost(pastry)}");
   }
 }
