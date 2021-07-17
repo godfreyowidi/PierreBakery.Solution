@@ -3,4 +3,10 @@ using PierreBakery.Models;
 
 namespace PierreBakery.Tests
 {
+  [TestClass]
+
+  public class BreadTests
+  {
+    
+  }
 }
