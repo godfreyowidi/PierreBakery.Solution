@@ -29,4 +29,15 @@ namespace PierreBakery.Tests
     }
     */
   }
+  [TestClass]
+  public class PastryTests
+  {
+    [TestMethod]
+
+    public void CalcPastryCost_CostOfOnePastry_2()
+    {
+      PastryQuantity testPastryCost = new PastryQuantity(1);
+      Assert.AreEqual(2, testPastryCost.CalcPastryCost(1));
+    }
+  }
 }
