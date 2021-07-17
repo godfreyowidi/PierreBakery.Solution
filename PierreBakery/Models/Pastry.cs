@@ -5,7 +5,7 @@ namespace PierreBakery.Models
 {
   public class PastryQuantity
   {
-    public int Quantity;
+    public int Quantity { get; set; }
     
     public PastryQuantity(int quantity)
     {

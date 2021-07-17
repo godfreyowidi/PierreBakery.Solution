@@ -6,7 +6,7 @@ namespace PierreBakery.Models
   public class BreadQuantity
   {
     
-    public int Quantity;
+    public int Quantity { get; set; }
 
     public BreadQuantity(int quantity)
     {
