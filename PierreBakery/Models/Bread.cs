@@ -12,7 +12,6 @@ namespace PierreBakery.Models
     {
       Quantity = quantity;
     }
-
     public int CalcBreadCost(int quantity)
     {
       if(quantity % 3 == 0)
