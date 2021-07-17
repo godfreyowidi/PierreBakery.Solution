@@ -17,7 +17,8 @@ namespace PierreBakery.Models
     {
       if(quantity % 3 == 0)
       {
-        return 0;
+        int totalCost = ((quantity / 3) * 10);
+        return totalCost;
       }
       else
       {
