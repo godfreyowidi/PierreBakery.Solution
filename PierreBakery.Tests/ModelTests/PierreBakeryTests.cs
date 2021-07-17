@@ -33,11 +33,16 @@ namespace PierreBakery.Tests
   public class PastryTests
   {
     [TestMethod]
-
     public void CalcPastryCost_CostOfOnePastry_2()
     {
       PastryQuantity testPastryCost = new PastryQuantity(1);
       Assert.AreEqual(2, testPastryCost.CalcPastryCost(1));
+    }
+    [TestMethod]
+    public void CalcPastryCost_CostOfMultiplesOfThreePastryOrder_10()
+    {
+      PastryQuantity testPastryCost = new PastryQuantity(6);
+      Assert.AreEqual(10, testPastryCost.CalcPastryCost(6));
     }
   }
 }
