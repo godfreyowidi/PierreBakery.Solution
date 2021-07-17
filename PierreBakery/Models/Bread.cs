@@ -10,7 +10,12 @@ namespace PierreBakery.Models
 
     public BreadQuantity(int quantity)
     {
-      
+      Quantity = quantity;
+    }
+
+    public int CalcBreadCost(int quantity)
+    {
+      return quantity;
     }
   }
 }
