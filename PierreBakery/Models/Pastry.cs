@@ -14,7 +14,7 @@ namespace PierreBakery.Models
 
     public int CalcPastryCost(int quantity)
     {
-      return quantity;
+      return quantity * 2;
     }
   }
 }
