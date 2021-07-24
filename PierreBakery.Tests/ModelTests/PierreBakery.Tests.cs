@@ -64,7 +64,7 @@ namespace PierreBakery.Tests
     public void CalcPastryCost_CostOfFourPastryOrder_7()
     {
       PastryQuantity testPastryCost = new PastryQuantity(4);
-      Assert.AreEqual(8, testPastryCost.CalcPastryCost(4));
+      Assert.AreEqual(7, testPastryCost.CalcPastryCost(4));
     }
   }
 }
