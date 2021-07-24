@@ -38,6 +38,12 @@ namespace PierreBakery.Tests
   [TestClass]
   public class PastryTests
   {
+    [TestMethod]
+    public void PastryQuantity_CreatesInstanceOfPastry_Pastry()
+    {
+      PastryQuantity newPastry = new PastryQuantity(0);
+      Assert.AreEqual(typeof(PastryQuantity),newPastry.GetType());
+    }
 
     [TestMethod]
     public void CalcPastryCost_CostOfOnePastry_2()
