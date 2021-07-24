@@ -8,6 +8,12 @@ namespace PierreBakery.Tests
   public class BreadTests
   {
     [TestMethod]
+    public void BreadQuantity_CreatesInstanceOfBread_Bread()
+    {
+      BreadQuantity newBread = new BreadQuantity(1);
+      Assert.AreEqual(typeof(BreadQuantity),newBread.GetType());
+    }
+    [TestMethod]
 
     public void CalcBreadCost_CostOfOneBread_5()
     {
@@ -20,29 +26,32 @@ namespace PierreBakery.Tests
     BreadQuantity testBreadCost = new BreadQuantity(3);
     Assert.AreEqual(10, testBreadCost.CalcBreadCost(3));
     }
-    /*
+  
     [TestMethod]
-    public void CalcBreadCost_CostOfOddNumberBreadOrder_16()
+    public void CalcBreadCost_CostOfOddNumberBreadOrder_25()
     {
     BreadQuantity testBreadCost = new BreadQuantity(5);
-    Assert.AreEqual(16, testBreadCost.CalcBreadCost(5));
+    Assert.AreEqual(25, testBreadCost.CalcBreadCost(5));
     }
-    */
+  
   }
   [TestClass]
   public class PastryTests
   {
+
     [TestMethod]
     public void CalcPastryCost_CostOfOnePastry_2()
     {
       PastryQuantity testPastryCost = new PastryQuantity(1);
       Assert.AreEqual(2, testPastryCost.CalcPastryCost(1));
     }
+
     [TestMethod]
     public void CalcPastryCost_CostOfMultiplesOfThreePastryOrder_10()
     {
       PastryQuantity testPastryCost = new PastryQuantity(6);
       Assert.AreEqual(10, testPastryCost.CalcPastryCost(6));
     }
+    
   }
 }
