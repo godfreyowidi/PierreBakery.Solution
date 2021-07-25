@@ -31,8 +31,9 @@ public class Program
       BreadQuantity Order1 = new BreadQuantity(bread);
       PastryQuantity Order2 = new PastryQuantity(pastry);
 
-      int breadDiscount = bread % 2;
-      int pastryDiscount = pastry % 3;
+      int breadDiscount = (bread / 3);
+      int pastryDiscount = (pastry / 3);
+      
       if(breadDiscount > 0 || pastryDiscount > 0)
       {
         Console.WriteLine($"Your order is {bread} bread, {pastry} pastries. You get {breadDiscount} bread and {pastryDiscount} pastries as discount totally free!");

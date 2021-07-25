@@ -31,7 +31,7 @@ namespace PierreBakery.Tests
     public void CalcBreadCost_CostOfOddNumberBreadOrder_25()
     {
     BreadQuantity testBreadCost = new BreadQuantity(5);
-    Assert.AreEqual(25, testBreadCost.CalcBreadCost(5));
+    Assert.AreEqual(20, testBreadCost.CalcBreadCost(5));
     }
   
   }

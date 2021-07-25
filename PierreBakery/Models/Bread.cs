@@ -14,16 +14,8 @@ namespace PierreBakery.Models
     }
     public int CalcBreadCost(int quantity)
     {
-      if(quantity % 3 == 0)
-      {
-        int totalCost = ((quantity / 2) * 10);
-        return totalCost;
-      }
-      else
-      {
-        return quantity * 5;
-      }
-      
+      int totalCost = (quantity * 5) - ((quantity / 3) * 5);
+      return totalCost;      
     }
   }
 }
